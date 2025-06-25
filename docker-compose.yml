@@ -4,7 +4,7 @@ services:
     container_name: filebrowser
     user: "1000:1000"
     ports:
-      - "8080:80"
+      - "8040:80"
     volumes:
       - /data:/srv
       - filebrowser_cfg:/config
