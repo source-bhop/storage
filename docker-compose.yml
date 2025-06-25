@@ -6,11 +6,12 @@ services:
     ports:
       - "8040:80"
     volumes:
-      - /files:/srv/files
+      - filebrowser_files:/srv/files
       - filebrowser_cfg:/config
       - filebrowser_db:/database
     restart: unless-stopped
 
 volumes:
+  filebrowser_files:
   filebrowser_db:
   filebrowser_cfg:
